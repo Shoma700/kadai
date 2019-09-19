@@ -1,27 +1,45 @@
+
 <?php
-//課題1
+echo "--------------------------\n";
+echo "\n";
+echo "--------------------------\n";
+echo "\n";
+echo 'PHP/Laravel 02 PHPの型と基本的な式を理解しよう';
+echo "\n";
+
+echo "\n";
+echo '課題1';
+echo "\n";
 $a = 3;
 $b = 7;
 echo $a + $b."\n";
 
-//課題2
+echo "\n";
+echo '課題2';
+echo "\n";
 $array_month = ['1月','2月','3月','4月','5月','6月','7月','8月','9月','10月','11月','12月'];
 echo $array_month[7];
 echo "\n";
 
-//課題3
+echo "\n";
+echo '課題3';
+echo "\n";
 $hello = 'Hello,';
 $name = 'Maeda Shoma';
 $world = '’s World!';
 echo $hello.$name.$world;
 echo "\n";
 
-//課題4
+echo "\n";
+echo '課題4';
+echo "\n";
 $tech_boost = 'tech';
 echo '「' . $tech_boost . ' boost」';
 echo "\n";
 
-//課題5
+echo "\n";
+echo '課題5';
+echo "\n";
 $calendar = [
   "January" => "1月",
   "February" => "2月",
@@ -40,9 +58,165 @@ $calendar = [
 echo $calendar["December"];
 echo "\n";
 
+?>
+<?php
+//echo "--------------------------\n";
+echo 'PHP/Laravel 03 プログラムの実行を条件分岐構文と繰り返し構文で制御できるようになろう';
+echo "\n";
+
+echo "\n";
+echo '課題1';
+echo "\n";
+//$name にあなたの名前を代入し、 if文で $name があなたの名前だったら 「私は あなたの名前 です」、
+//もし違ったら「あなたの名前ではありません」と表示するように実装してください。
+$name = 'Maeda';
+if ($name == 'Maeda'){
+    echo '私は あなたの名前 です';
+}else{
+    echo 'あなたの名前ではありません';
+}
+echo "\n";
+
+echo "\n";
+echo '課題2';
+echo "\n";
+//for文を使って、1から10000までの合計の値を表示してください。
+$total = 0;
+for ($i = 1; $i <= 10000; $i++){
+    $total += $i; 
+}
+echo $total;
+echo "\n";
+
+echo "\n";
+echo '課題3';
+echo "\n";
+//$fruits に配列で好きなフルーツを5個代入し、foreach文で順番に出力してください。
+$fruits = array("apple","orange","banana","lemon","strawberry");
+foreach($fruits as $fruit){
+    echo "好きなフルーツは".$fruit."です。";
+    echo "\n";
+}
+
+echo "\n";
+echo '課題4';
+echo "\n";
+//【応用】 次のプログラムのバグを修正し、1から100までの間で5の倍数のみ表示するようにしてみてください。
+
+$start = 1;
+$end = 100;
+
+for($i = $start; $i <= $end; $i++){
+
+  // 5で割り切れたら{}内を実行する
+  if($i % 5 == 0){
+    echo $i;
+    echo "\n";
+  }
+}
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+echo "--------------------------\n";
+$height = 160;
+if ($height < 150){
+    echo '150㎝未満は乗車不可';
+}else{
+    echo '乗車可能です';
+}
+echo "\n";
+
+$height = 230;
+if ($height < 150){
+    echo '150㎝未満の方は乗車不可';
+}elseif ($height >= 200){
+    echo '200㎝以上の方は乗車不可';
+}else{
+    echo '乗車可能です';
+}
+echo "\n";
+
+
+$weekday = "月曜";
+switch ($weekday){
+    case "月曜":
+        echo '可燃ごみの日です';
+    break;
+    case "水曜":
+        echo '不燃ごみの日です';
+    break;
+    default:
+        echo '回収はありません';
+    break;
+}
+echo "\n";
+
+$weekday = "木曜";
+switch ($weekday){
+    case "月曜":
+    case "木曜":
+        echo '可燃ごみの日です';
+    break;
+    case "水曜":
+        echo '不燃ごみの日です';
+    break;
+    default:
+        echo '回収はありません';
+    break;
+}
+echo "\n";
+
+$i = 1;
+for ($i = 1; $i <= 10; $i++){
+    echo $i;
+}
+echo "\n";
+
+
+$total = 0;
+for ($i = 1; $i <=100; $i++){
+    $total += $i; 
+}
+echo $total;
+echo "\n";
+
+$fruits = array("apple","banana","orange");
+echo count($fruits);
+echo "\n";
+
+for ($i = 0; $i <= count($fruits)-1; $i++){
+    echo '要素は'.$fruits[$i].'です。';
+    echo "\n";
+}
+echo "\n";
+
+$animals = array("dog","cat","sheep");
+foreach($animals as $animal){
+    echo '要素は'.$animal.'です';
+    echo "\n";
+}
+*/
+
+?>
+
+
+
+<?php
 /*
 echo "--------------------------\n";
 echo 'hello php!';
